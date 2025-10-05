@@ -1,0 +1,38 @@
+---
+title: "economia_2023_Resumen prueba 1 Durán_Aravena_Katherine.pdf"
+page-layout: article
+toc: false
+categories: ["Economia", "2023"]
+description: "Economia — Resumen Prueba 1 Durán. PDF aportado por Aravena Katherine."
+date: 2025-10-05
+author: ["Aravena, K."]
+format:
+  html:
+    css: "../../../Styles_A.css"
+    code-fold: false
+---
+
+::: {.page-surface}
+
+~~~{=html}
+<div class="box-apa">
+  <div class="box-apa-head">
+    <span class="box-apa-kicker">Referencia (APA 7)</span>
+  </div>
+  <div class="box-apa-body">
+    Aravena, K. (2023). <em>Economia: Resumen Prueba 1 Durán</em> [PDF]. Repositorio de Apuntes de Sociología, U. de Chile.
+  </div>
+</div>
+~~~
+
+**Curso:** Economia  
+**Año:** 2023  
+**Archivo PDF:** [economia_2023_Resumen prueba 1 Durán_Aravena_Katherine.pdf](/resources/apuntes_Listos/economia_2023_Resumen%20prueba%201%20Dur%C3%A1n_Aravena_Katherine.pdf)
+
+---
+
+### Vista del documento
+
+<iframe src="/resources/apuntes_Listos/economia_2023_Resumen%20prueba%201%20Dur%C3%A1n_Aravena_Katherine.pdf" width="100%" height="720" style="border:1px solid var(--borde); border-radius:12px;"></iframe>
+
+:::

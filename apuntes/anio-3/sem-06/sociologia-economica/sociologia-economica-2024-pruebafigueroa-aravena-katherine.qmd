@@ -1,0 +1,38 @@
+---
+title: "sociologia_economica_2024_PruebaFigueroa_Aravena_Katherine.pdf"
+page-layout: article
+toc: false
+categories: ["Sociologia", "2024"]
+description: "Sociologia — Pruebafigueroa. PDF aportado por Aravena Katherine."
+date: 2025-10-05
+author: ["Aravena, K."]
+format:
+  html:
+    css: "../../../Styles_A.css"
+    code-fold: false
+---
+
+::: {.page-surface}
+
+~~~{=html}
+<div class="box-apa">
+  <div class="box-apa-head">
+    <span class="box-apa-kicker">Referencia (APA 7)</span>
+  </div>
+  <div class="box-apa-body">
+    Aravena, K. (2024). <em>Sociologia: Pruebafigueroa</em> [PDF]. Repositorio de Apuntes de Sociología, U. de Chile.
+  </div>
+</div>
+~~~
+
+**Curso:** Sociologia  
+**Año:** 2024  
+**Archivo PDF:** [sociologia_economica_2024_PruebaFigueroa_Aravena_Katherine.pdf](/resources/apuntes_Listos/sociologia_economica_2024_PruebaFigueroa_Aravena_Katherine.pdf)
+
+---
+
+### Vista del documento
+
+<iframe src="/resources/apuntes_Listos/sociologia_economica_2024_PruebaFigueroa_Aravena_Katherine.pdf" width="100%" height="720" style="border:1px solid var(--borde); border-radius:12px;"></iframe>
+
+:::

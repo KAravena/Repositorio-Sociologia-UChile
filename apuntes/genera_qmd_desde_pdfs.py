@@ -13,6 +13,11 @@ APUNTES_BASE = Path("apuntes")                 # raíz malla
 SITE_BASE_PDF_READY = "/resources/apuntes_Listos"  # URL pública PDFs movidos
 STATE_FILE = Path(".apuntes_first_render.json")    # 1ra fecha de render
 PREFERRED_CSS_NAME = "Styles_A.css"                # CSS dentro de /apuntes
+
+# Fuerza una ruta fija al CSS en los .qmd (ignora profundidad de carpetas)
+USE_FORCE_CSS = True
+FORCE_CSS_PATH = "../../../Styles_A.css"          # Ruta fija deseada
+
 MIGRAR_CARPETAS_A_SLUG = True                      # renombrar carpetas con slug (recomendado)
 # ===================
 
@@ -78,7 +83,6 @@ def to_yaml_authors(lst):
 def make_citation_apa_html(autores_apa, anio, curso_hum, tema_hum):
     autores = join_authors_apa(autores_apa)
     titulo = f"{curso_hum}: {tema_hum}"
-    # SIN el nombre del archivo al final
     return f"{autores} ({anio}). <em>{titulo}</em> [PDF]. Repositorio de Apuntes de Sociología, U. de Chile."
 
 # ---------- Parseo de nombre ----------
@@ -169,7 +173,6 @@ def migrar_curso_dirs_a_slug(base: Path):
                     continue
                 target = sem / slug
                 if target.exists():
-                    # si ya existe, solo escribe title.txt si falta y mueve archivos no existentes
                     if not (target / "title.txt").exists():
                         (target / "title.txt").write_text(human, encoding="utf-8")
                     for p in curso_dir.iterdir():
@@ -194,13 +197,22 @@ def migrar_curso_dirs_a_slug(base: Path):
     if cambios:
         print(f"✓ Migradas {cambios} carpetas de curso a slugs (se guardó title.txt con el nombre humano).")
 
-# ---------- CSS: ruta relativa desde la carpeta del curso ----------
+# ---------- CSS: ruta (forzada o calculada) ----------
 def css_rel_from_course(destino: Path) -> str | None:
     """
-    Devuelve el path relativo desde la carpeta del curso (destino)
-    hacia /apuntes/Styles_A.css (si existe). Ej: "../../../Styles_A.css"
+    Si USE_FORCE_CSS es True, devuelve siempre FORCE_CSS_PATH.
+    En caso contrario, calcula la ruta relativa hacia /apuntes/Styles_A.css.
     """
     css_abs = APUNTES_BASE / PREFERRED_CSS_NAME
+
+    # Modo forzado: siempre la misma ruta fija
+    if USE_FORCE_CSS:
+        # (Opcional) Si quieres avisar cuando falte el archivo real:
+        if not css_abs.exists():
+            print(f"⚠️ Aviso: {css_abs} no existe, pero se insertará {FORCE_CSS_PATH} en los .qmd igualmente.")
+        return FORCE_CSS_PATH
+
+    # Modo automático (lógica previa)
     if not css_abs.exists():
         return None
     try:
@@ -320,7 +332,7 @@ def main():
 
         out_path = destino / (slugify(pdf.stem) + ".qmd")
 
-        # CSS relativo desde la carpeta del curso
+        # CSS (forzado o automático)
         css_ref = css_rel_from_course(destino)
         css_block = build_css_block(css_ref)
 

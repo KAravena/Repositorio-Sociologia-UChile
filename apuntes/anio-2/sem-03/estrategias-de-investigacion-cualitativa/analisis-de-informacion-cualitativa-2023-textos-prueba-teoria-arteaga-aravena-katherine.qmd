@@ -1,0 +1,38 @@
+---
+title: "analisis_de_informacion_cualitativa_2023_Textos Prueba teoria Arteaga_Aravena_Katherine.pdf"
+page-layout: article
+toc: false
+categories: ["Analisis", "2023"]
+description: "Analisis — Textos Prueba Teoria Arteaga. PDF aportado por Aravena Katherine."
+date: 2025-10-05
+author: ["Aravena, K."]
+format:
+  html:
+    css: "../../../Styles_A.css"
+    code-fold: false
+---
+
+::: {.page-surface}
+
+~~~{=html}
+<div class="box-apa">
+  <div class="box-apa-head">
+    <span class="box-apa-kicker">Referencia (APA 7)</span>
+  </div>
+  <div class="box-apa-body">
+    Aravena, K. (2023). <em>Analisis: Textos Prueba Teoria Arteaga</em> [PDF]. Repositorio de Apuntes de Sociología, U. de Chile.
+  </div>
+</div>
+~~~
+
+**Curso:** Analisis  
+**Año:** 2023  
+**Archivo PDF:** [analisis_de_informacion_cualitativa_2023_Textos Prueba teoria Arteaga_Aravena_Katherine.pdf](/resources/apuntes_Listos/analisis_de_informacion_cualitativa_2023_Textos%20Prueba%20teoria%20Arteaga_Aravena_Katherine.pdf)
+
+---
+
+### Vista del documento
+
+<iframe src="/resources/apuntes_Listos/analisis_de_informacion_cualitativa_2023_Textos%20Prueba%20teoria%20Arteaga_Aravena_Katherine.pdf" width="100%" height="720" style="border:1px solid var(--borde); border-radius:12px;"></iframe>
+
+:::
