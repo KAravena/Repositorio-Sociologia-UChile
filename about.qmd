@@ -43,7 +43,7 @@ Los apuntes representan el corazón del repositorio. La idea es que cada apunte 
  [Abrir formulario de aportes](https://forms.gle/WTuiENRJ61gJbwEB6){.btn-cta target=_blank rel=noopener}
 
 
-- En la carpeta **Drive** del repositorio. Esta carpeta cuenta con un archivo Excel para completar la información de los colaboradores en la pestaña Comunidad de la página -proximamente-, Para completar los datos del archivo -despliega Plantilla de nombre de archivo por ramo- : 
+- En la carpeta **Drive** del repositorio. Esta carpeta cuenta con un archivo Excel para completar la información de los colaboradores en la pestaña Comunidad de la página -proximamente-, Para completar los datos del archivo -despliega Plantilla de nombre de archivo por ramo : 
 
 </div>
 
