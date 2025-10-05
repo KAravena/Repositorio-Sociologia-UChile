@@ -51,7 +51,7 @@ Los apuntes representan el corazón del repositorio. La idea es que cada apunte 
 
   - `[Ramo]_[Año]_[Tema]_[Apellido_Nombre].pdf`
 
-          Por ejemplo: FilosofíaSocial_2022_prueba1_Aravena_Katherine.pdf
+          Por ejemplo: FilosofíaSocial_2022_prueba1_Carrasco_Andrea.pdf
 
   [Abrir Drive](https://drive.google.com/drive/folders/1TkWgnE7F0SC4_pjIN6dK57W-HJyZIvRe?usp=sharing){.btn-cta target=_blank rel=noopener}
 
